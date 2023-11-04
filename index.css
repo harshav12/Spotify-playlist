@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/* font-family: 'Varela Round', sans-serif; */
+body{
+    background-color:grey;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center; 
+    height: 65px;
+    background-color: black;
+    list-style-type: none;
+    color: white;
+}
+nav ul li{
+    padding: 0px 12px;
+}
+.brand img{ 
+    width: 44px;
+    padding: 0px 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size:1.3rem;;
+}
+.container{
+    height: 70vh;
+    background-color:black;
+    color: white;
+    font-family: 'Varela Round',sans-serif;
+    font-size: 0.8rem;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 20px;
+    background-image: url('./musicbackground.png');
+    background-repeat: no-repeat;
+    background-size: 1200px 570px;
+}
+
+.bottom{
+    height:90px;
+    background-color: black;
+    margin-top: 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#myProgressBar{
+  width: 80vw;
+  text-align: center;
+  cursor: pointer;
+}
+.icons{
+    margin-top: 5px;
+}
+icons i{
+    cursor: pointer;
+}
+.songitemcontainer{
+    margin-top: 50px;
+}
+.songitem{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    margin: 12px 0px;
+    justify-content: space-between;
+    border-radius: 34px;
+}
+.songitem img{
+ height: 27px;
+ border-radius: 34px;
+ margin-left: 10px;
+}
+.timestamp i{
+    margin: 0px 15px;
+    cursor: pointer;
+}
+#songinfo{
+    position: absolute;
+    left: 10vw;
+    margin-top: 0px;
+    font-family: 'Varela Round',sans-serif;
+}
+#songinfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+.hover:hover{
+    border: 1px solid white;
+}
